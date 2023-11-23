@@ -1,0 +1,12 @@
+1 - Criar o ambiente virtual
+2 - instalar as bibliotecas
+3 - passar as depencias para o arquivo requirements
+4 - Começar a organizar as pastas de desenvolvimento e de deploy
+5 - Arquivos -> Criar arquivos para aaplicação.
+
+
+COMANDO CONSTRUIR A IMAGEM BASEADO EM PYTHON
+
+- Depois de estar logado no Docker Hub
+- Escrever este comando no terminal - docker build -t "nome da imagem"
+- 

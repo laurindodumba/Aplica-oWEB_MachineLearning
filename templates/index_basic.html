@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NewsClassifier App</title>
+
+</head>
+<body>
+<div>
+  <h2>Classificator de notícias</h2>
+  <a href="{{ url_for('index')}}">Refresh</a>
+</div>
+
+  
+<div class="container" >
+<form method="POST" action="/predict">
+	<textarea rows="10" cols="10" type="text" name="rawtext"></textarea>
+    <select name="modelchoice">
+      <option selected>Select Model Type</option>
+      <option value="nb">Naive Bayes</option>
+      <option value="logit">Logistic Regression</option>
+      <option value="rf">Random Forest</option>
+      
+    </select>
+	<button type="reset" >Limpar</button>
+	<button type="submit" >Preditor</button>
+</form>
+</div>
+<br/>
+<br/>
+<div>
+<h4>Texto Original</h4>
+      <p>{{ rawtext }}</p>
+		</div>
+	</div>
+
+
+
+	<div>
+      <h4>Predição</h4>
+      <div><p>{{ final_result }}</p></div>
+		</div>
+	</div>
+</div>
+	<br/>
+
+
+</div>
+
+
+</body>
+</html>
